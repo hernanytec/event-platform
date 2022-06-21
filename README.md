@@ -7,7 +7,7 @@
 
 
 ## Tecnologias utilizadas
-- [x] React JS
+- [x] React JS / Typescript
 - [x] GraphQL
-- [x] HeadlessCMS
+- [x] GraphCMS
 - [x] TailwindCSS    
