@@ -2,6 +2,7 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import codeMockup from "/src/assets/code-mockup.png";
 
 export function Subscribe() {
   const navigate = useNavigate();
@@ -37,7 +38,9 @@ export function Subscribe() {
           </p>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-500 rounded">
-          <strong className="text-2xl mb-7"> Inscreva-se gratuitamente</strong>
+          <strong className="block text-2xl mb-7">
+            Inscreva-se gratuitamente
+          </strong>
           <form
             onSubmit={handleSubscribe}
             className="flex flex-col gap-2 w-full"
@@ -67,7 +70,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <img src={codeMockup} className="mt-10" alt="" />
     </div>
   );
 }
